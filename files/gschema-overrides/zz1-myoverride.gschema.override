@@ -1,0 +1,6 @@
+[org.gnome.desktop.interface]
+accent-color="teal"
+[org.gnome.desktop.interface]
+color-scheme="prefer-dark"
+[org.gnome.shell]
+favorite-apps = ['app.zen_browser.zen.desktop', 'org.signal.Signal.desktop', 'im.riot.Riot.desktop', 'me.proton.Mail.desktop', 'org.standardnotes.standardnotes.desktop', 'me.proton.Pass.desktop', 'dev.zed.Zed.desktop', 'com.axosoft.GitKraken.desktop', 'com.spotify.Client.desktop', 'com.valvesoftware.Steam.desktop', 'com.jeffser.Alpaca.desktop', 'org.gnome.Nautilus.desktop', 'io.github.flattool.Warehouse.desktop', 'org.gnome.Settings.desktop', 'dev.warp.Warp.desktop']

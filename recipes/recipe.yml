@@ -1,7 +1,7 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: my-fedora
+name: blue_os
 # description will be included in the image's metadata
 description: This is my personal OS image.
 
@@ -20,25 +20,80 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-    install:
-      - micro
-      - starship
+    # install:
+    #   - micro
+    #   - starship
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-
+  - type: gnome-extensions
+    install:
+      - 517 #Caffeine
+      - 779 #Clipboard Indicator
+      - 2398 #Hide Universal Access
+      - 7048 #Rounded Window Corners Reborn
+  - type: brew
+    nofile-limits: true # increase nofile limits
+    brew-analytics: false # disable telemetry
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
-        - org.mozilla.firefox
-        - org.gnome.Loupe
+        - app.zen_browser.zen
+        - dev.zed.Zed
+        - com.bitwig.BitwigStudio
+        - org.blender.Blender
+        - io.github.dvlv.boxbuddyrs
+        - org.gnome.Boxes
+        - com.brave.Browser
+        - io.github.celluloid_player.Celluloid
+        - app.drey.Dialect
+        - com.github.maoschanz.drawing
+        - com.mattjakeman.ExtensionManager
+        - com.github.finefindus.eyedropper
+        - org.fedoraproject.MediaWriter
+        - com.github.ADBeveridge.Raider
+        - com.github.tchx84.Flatseal
+        - org.gaphor.Gaphor
+        - com.github.neithern.g4music
+        - com.axosoft.GitKraken
+        - org.gimp.GIMP
+        - org.pipewire.Helvum
+        - org.inkscape.Inkscape
+        - org.kde.kdenlive
+        - io.github.seadve.Kooha
+        - org.gnome.Maps
+        - fr.romainvigier.MetadataCleaner
+        - com.adrienplazas.Metronome
+        - org.mixxx.Mixxx
+        - io.github.seadve.Mousai
+        - io.github.amit9838.mousam
+        - fr.natron.Natron
+        - com.github.dynobo.normcap
+        - com.belmoussaoui.Obfuscate
+        - io.github.fabrialberio.pinapp
+        - com.protonvpn.www
+        - com.vysp3r.ProtonPlus
+        - fm.reaper.Reaper
+        - net.nokyan.Resources
+        - org.signal.Signal
+        - com.spotify.Client
+        - com.valvesoftware.Steam
+        - org.telegram.desktop
+        - org.gnome.TextEditor
+        - io.gitlab.liferooter.TextPieces
+        - io.github.flattool.Warehouse
+        - app.drey.Warp
+        - me.proton.Pass
+        - me.proton.Mail
+        - org.gnome.Snapshot
+        - org.fedoraproject.MediaWriter
+        - xyz.ketok.Speedtest
       remove:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
-

@@ -3,4 +3,35 @@ accent-color="teal"
 [org.gnome.desktop.interface]
 color-scheme="prefer-dark"
 [org.gnome.shell]
-favorite-apps = ['app.zen_browser.zen.desktop', 'org.signal.Signal.desktop', 'im.riot.Riot.desktop', 'me.proton.Mail.desktop', 'org.standardnotes.standardnotes.desktop', 'me.proton.Pass.desktop', 'dev.zed.Zed.desktop', 'com.axosoft.GitKraken.desktop', 'com.spotify.Client.desktop', 'com.valvesoftware.Steam.desktop', 'com.jeffser.Alpaca.desktop', 'org.gnome.Nautilus.desktop', 'io.github.flattool.Warehouse.desktop', 'org.gnome.Settings.desktop', 'dev.warp.Warp.desktop']
+enabled-extensions = ['hide-universal-access@akiirui.github.io', 'clipboard-indicator@tudmotu.com', 'rounded-window-corners@fxgn', 'caffeine@patapon.info']
+allow-extension-installation=true
+favorite-apps = ['app.zen_browser.zen.desktop', 'org.signal.Signal.desktop', 'im.riot.Riot.desktop', 'me.proton.Mail.desktop', 'org.standardnotes.standardnotes.desktop', 'me.proton.Pass.desktop', 'dev.zed.Zed.desktop', 'com.axosoft.GitKraken.desktop', 'com.bitwig.BitwigStudio.desktop', 'com.spotify.Client.desktop', 'com.valvesoftware.Steam.desktop', 'com.jeffser.Alpaca.desktop', 'org.gnome.Nautilus.desktop', 'io.github.flattool.Warehouse.desktop', 'org.gnome.Settings.desktop', 'dev.warp.Warp.desktop']
+[org.gnome.desktop.app-folders]
+folder-children = ['mygraphics', 'mysystem', 'myutilitis', 'mydev', 'myaudio', 'myvideo', 'mygaming', 'mysocial', 'myorga']
+[org.gnome.desktop.app-folders.folders.mygraphics]
+name = 'Graphics'
+apps = ['org.blender.Blender.desktop', 'org.gimp.GIMP.desktop', 'com.github.maoschanz.drawing.desktop', 'org.inkscape.Inkscape.desktop', 'org.darktable.Darktable.desktop', 'app.fotema.Fotema.desktop']
+[org.gnome.desktop.app-folders.folders.mysystem]
+name = 'System'
+apps = ['org.gnome.Snapshot.desktop', 'io.github.celluloid_player.Celluloid.desktop', 'org.gnome.SystemMonitor.desktop', 'org.gnome.Settings.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'org.gnome.tweaks.desktop', 'org.pipewire.Helvum.desktop', 'com.github.tchx84.Flatseal.desktop', 'io.github.fabrialberio.pinapp.desktop', 'yelp.desktop', 'com.github.neithern.g4music.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Tour.desktop', 'io.github.flattool.Warehouse.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Software.desktop', 'org.gnome.Ptyxis.desktop', 'net.nokyan.Resources.desktop']
+[org.gnome.desktop.app-folders.folders.myutilitis]
+name = 'Utilitis'
+apps = ['org.gnome.Boxes.desktop', 'org.fedoraproject.MediaWriter.desktop', 'io.github.dvlv.boxbuddyrs.desktop', 'com.github.finefindus.eyedropper.desktop', 'app.drey.Dialect.desktop', 'com.github.ADBeveridge.Raider.desktop', 'com.github.dynobo.normcap.desktop', 'io.github.amit9838.mousam.desktop', 'io.github.seadve.Mousai.desktop', 'org.gnome.Maps.desktop', 'fr.romainvigier.MetadataCleaner.desktop', 'com.protonvpn.www.desktop', 'io.gitlab.liferooter.TextPieces.desktop', 'app.drey.Warp.desktop', 'me.sanchezrodriguez.passes.desktop', 'com.github.hugolabe.Wike.desktop', 'xyz.ketok.Speedtest.desktop']
+[org.gnome.desktop.app-folders.folders.mydev]
+name = 'Dev'
+apps = ['com.axosoft.GitKraken.desktop', 'com.vscodium.codium.desktop', 'org.gaphor.Gaphor.desktop']
+[org.gnome.desktop.app-folders.folders.myaudio]
+name = 'Audio'
+apps = ['org.mixxx.Mixxx.desktop', 'fm.reaper.Reaper.desktop', 'com.adrienplazas.Metronome.desktop', 'app.drey.EarTag']
+[org.gnome.desktop.app-folders.folders.myvideo]
+name = 'Video'
+apps = ['fr.natron.Natron.desktop', 'org.kde.kdenlive.desktop', 'io.github.seadve.Kooha.desktop']
+[org.gnome.desktop.app-folders.folders.mygaming]
+name = 'Gaming'
+apps = ['com.heroicgameslauncher.hgl.desktop', 'com.vysp3r.ProtonPlus.desktop', 'io.github.Foldex.AdwSteamGtk.desktop']
+[org.gnome.desktop.app-folders.folders.mysocial]
+name = 'Social'
+apps = ['org.telegram.desktop.desktop', 'io.gitlab.news_flash.NewsFlash.desktop']
+[org.gnome.desktop.app-folders.folders.myorga]
+name = 'Orga'
+apps = ['org.onlyoffice.desktopeditors.desktop', 'org.standardnotes.standardnotes.desktop', 'com.belmoussaoui.Obfuscate.desktop', 'com.sejda.Sejda.desktop']

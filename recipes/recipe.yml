@@ -38,7 +38,7 @@ modules:
       - 779 #Clipboard Indicator
       - 2398 #Hide Universal Access
       - 7048 #Rounded Window Corners Reborn
-      - 5306 #pip-on-top@rafostar.github.com
+      # - 5306 #pip-on-top@rafostar.github.com
   - type: brew
     nofile-limits: true # increase nofile limits
     brew-analytics: false # disable telemetry
